@@ -1,0 +1,151 @@
+@font-face{
+	font-family: font1;
+	src: url("fonts/AdleryPro.ttf");
+}
+@font-face{
+	font-family: font2;
+	src: url("fonts/GlorySignaturePersonalUse.otf");
+}
+@font-face{
+	font-family: font3;
+	src: url("fonts/TerminatorGenisys.ttf");
+}
+@font-face{
+	font-family: font4;
+	src: url("fonts/AdleryProSwash.ttf");
+}
+body{
+	margin: 0;
+}
+a{
+	text-decoration-line: none;
+}
+#header{
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+/*	height: 50px;*/
+	background-color: 	#756f71;
+	text-align: center;
+}
+#header .btn{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px;
+	height: 30px;
+	font-size: 30px;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #ddd;
+	font-family: font3;
+	transition-duration: 200ms;
+
+}
+#header .btn:hover{
+	color: #fff;
+	text-shadow: 0 0 10px #777;
+}
+#header .btn .arr{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	height: 20px;
+	width: 20px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#header .btn .arr::before{
+	content: "";
+	display: block;
+	position: absolute;
+	background-color: #aaa;
+	height: 2px;
+	width: 12px;
+	top: calc(50% - 1px);	
+	left: 0;
+	transform: rotate(-45deg);
+	transition-duration: 200ms;
+}
+#header .btn:hover .arr::before{
+		transform: rotate(45deg);
+}
+#header .btn .arr::after{
+	content: "";
+	display: block;
+	position: absolute;
+	background-color: #aaa;	
+	height: 2px;
+	width: 12px;
+	top: calc(50% - 1px);
+	right: 0;
+	transform: rotate(45deg);
+	transition-duration: 200ms;
+}
+#header .btn:hover .arr::after{
+		transform: rotate(-45deg);
+}
+#header .btn .menu{
+	background-color: rgba(0, 0, 0, 0.8);
+	padding:10px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	transform: translateY(-50%) scaleY(0);
+	transition-duration: 200ms;
+}
+#header .btn:hover .menu{
+		transform: translateY(0) scaleY(1);
+}
+#header .btn .menu-btn{
+	height: 20px;
+	font-size: 20px;
+	line-height: 20px;
+	color: #aaa;
+	text-transform: none;
+}
+#header .logo{
+	padding: 0;
+
+	height: 50px;
+}
+#header .logo img{
+	height: 100%;
+}
+#header .btn1{
+	
+}
+#header .btn2{
+	
+}
+#content{
+	min-height: 100vh;
+	background-color: #454545;
+}
+#block1{
+
+}
+#block1 video{
+	width: 100%;
+}
+.block{
+
+}
+#footer{
+	text-align: center;
+	padding: 50px;
+	background-color: #121111;
+}
+#footer span{
+	margin: 10px;
+	color: #aaa;
+}
+#footer span a{
+	color: #aaa;
+	text-decoration-line: none; 
+}
+#footer span a;hover{
+	text-decoration-line: underline;
+}
